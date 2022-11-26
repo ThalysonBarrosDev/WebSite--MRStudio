@@ -16,7 +16,7 @@
     --degrade-btn: linear-gradient(#fe9611, #ff5c00);
 }
 
-.background-green {
+.header-main-green {
     background: var(--blindfold);
 }
 
@@ -149,6 +149,34 @@ main .container {
     font-weight: 600;
 }
 
+/* Section - Differentials */
+.differentials .container {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px auto;
+}
+
+.differentials .card {
+    width: 30%;
+    cursor: pointer;
+    padding: 30px;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.differentials .card:hover {
+    box-shadow: 0px 10px 67px 8px #9e9ead85;
+}
+
+.differentials .card img {
+    width: 60px;
+}
+
+.differentials .card .title {
+    margin: 13px 0;
+    font-weight: 600;
+}
+
 /* Responsiveness */
 @media (max-width: 960px) {
     .nav-menuicon {
@@ -207,6 +235,14 @@ main .container {
 
     .results .result-numbers {
         margin-top: 30px;
+    }
+
+    .differentials .container {
+        flex-direction: column;
+    }
+
+    .differentials .card {
+        width: 100%;
     }
 }
 
