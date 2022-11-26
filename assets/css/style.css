@@ -27,6 +27,10 @@
     margin: 0 auto;
 }
 
+section, footer {
+    padding: 2.7rem 0;
+}
+
 .btn-gradient {
     padding: 10px 25px;
     color: white;
@@ -57,6 +61,10 @@ nav {
 .nav-ul li {
     margin: 0 35px;
     font-size: 15px;
+}
+
+.nav-ul li a button {
+    font-weight: bold;
 }
 
 .nav-ul li a {
@@ -92,12 +100,53 @@ main .container {
     margin-top: 25px;
 }
 
+.main-text div button {
+    font-weight: bold;
+}
+
 .main-img {
     width: 50%;
+    margin-bottom: 15px;
 }
 
 .main-img img {
     width: 100%;
+}
+
+/* Section - Results */
+.results {
+    background: #FA8607;
+}
+
+.results .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.results .result-text {
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 600;
+    width: 50%;
+}
+
+.results .result-numbers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.results .result-numbers p {
+    text-align: center;
+    margin: 0 30px;
+    font-size: 20px;
+}
+
+.results .result-numbers p span { 
+    font-size: 30px;
+    font-weight: 600;
 }
 
 /* Responsiveness */
@@ -145,5 +194,28 @@ main .container {
 
     main .container .main-text div {
         justify-content: center;
+    }
+
+    .results .container {
+        flex-direction: column;
+    }
+    .results .result-text, 
+    .results .result-numbers {
+        width: 100%;
+        text-align: center;
+    }
+
+    .results .result-numbers {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 440px) {
+    .results .result-numbers {
+        flex-direction: column;
+    }
+
+    .results .result-numbers p {
+        margin-bottom: 20px;
     }
 }
