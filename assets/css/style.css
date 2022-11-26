@@ -63,7 +63,7 @@ nav {
     font-size: 15px;
 }
 
-.nav-ul li a button {
+.nav-button a button {
     font-weight: bold;
 }
 
@@ -75,6 +75,10 @@ nav {
     display: none;
     position: relative;
     z-index: 10;
+}
+
+.navmenu-text {
+    display: none;
 }
 
 /* Main */
@@ -335,6 +339,22 @@ footer .footer-developers a {
     .nav-ul li {
         font-size: 20px;
         margin: 20px 0px;
+    }
+
+    .nav-button  {
+        display: none;
+    }
+
+    .navmenu-text {
+        display: block;
+        position: fixed;
+        left: 100%;
+        transition: 0.3s;
+    }
+
+    .navmenu-text h1 {
+        color: white;
+        margin-left: 25px;
     }
 
     .active {
